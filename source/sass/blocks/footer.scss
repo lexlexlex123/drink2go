@@ -1,0 +1,108 @@
+.footer {
+  flex-grow: 0;
+}
+
+.footer__block {
+  border-bottom: 1px solid $color-base-secondary;
+  display: flex;
+  padding: 20px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.footer__block-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-letterD {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.footer__logo-letterG {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.footer__social {
+  list-style-type: none;
+  display: flex;
+  height: 40px;
+  width: 160px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.footer__social-item {
+  padding: 10px;
+}
+
+.footer__title {
+  color: $color-base-primary;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2%;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer__item {
+  color: $color-base-black;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-base-primary;
+  }
+
+  &:active {
+    color: $color-primary-lighter;
+  }
+}
+
+.footer__item-size {
+  font-size: 14px;
+}
+
+.footer__sponsor {
+  color: $color-base-grey;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0 auto 10px;
+
+  &:hover,
+  &:focus {
+    color: $color-base-primary;
+  }
+
+  &:active {
+    color: $color-primary-lighter;
+  }
+}
