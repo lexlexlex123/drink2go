@@ -4,6 +4,10 @@
   flex-direction: column;
   gap: 20px;
   background-color: $color-base-white;
+
+  @media (min-width: $tablet) {
+    padding-top: 300px;
+  }
 }
 
 .features__wrapper {

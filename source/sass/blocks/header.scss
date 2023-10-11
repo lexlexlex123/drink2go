@@ -4,14 +4,85 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    height: 80px;
+  }
 }
 
-.header__logo-letterD {
-  display: none;
+.header__wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.header__logo-letterG {
+.header__menu {
   display: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.header__menu-item {
+  font-size: 12px;
+  height: 100%;
+  text-transform: uppercase;
+  padding: 32px 20px;
+  margin: 0;
+  list-style-type: none;
+  letter-spacing: 2%;
+  font-weight: 500;
+  color: $color-base-black;
+  align-items: center;
+}
+
+.header__menu-item-select {
+  color: $color-base-primary;
+  border-bottom: 2px solid $color-base-primary;
+}
+
+.header__button-menu {
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__logo-letter {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-letter::before {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-base-black;
+
+  @media (min-width: $tablet) {
+    content: "D";
+  }
+
+  @media (min-width: $desktop) {
+    content: "DRINK";
+  }
+}
+
+.header__logo-letter::after {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-base-black;
+
+  @media (min-width: $tablet) {
+    content: "G";
+  }
+
+  @media (min-width: $desktop) {
+    content: "GO";
+  }
 }
 
 .header__button {

@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 20px 1fr 20px;
   background-color: $color-bg-flat-white;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 80px 1fr 80px;
+  }
 }
 
 .hero__left {
@@ -20,6 +24,10 @@
   align-items: center;
   position: relative;
   gap: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 40px 0 140px;
+  }
 }
 
 .hero__title {
@@ -28,16 +36,31 @@
   font-weight: 700;
   text-align: center;
   color: $color-base-black;
+
+  @media (min-width: $tablet) {
+    font-size: 56px;
+    line-height: 80px;
+  }
 }
 
 .hero__def {
   font-size: 14px;
   text-align: center;
   color: $color-base-black;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .hero__img {
   width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 476px;
+    position: absolute;
+    bottom: -280px;
+  }
 }
 
 .hero__old-price {
