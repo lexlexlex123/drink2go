@@ -1,0 +1,64 @@
+.hero {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  background-color: $color-bg-flat-white;
+}
+
+.hero__left {
+  align-self: center;
+  justify-self: center;
+}
+
+.hero__right {
+  align-self: center;
+  justify-self: center;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.hero__title {
+  font-size: 36px;
+  letter-spacing: 2%;
+  font-weight: 700;
+  text-align: center;
+  color: $color-base-black;
+}
+
+.hero__def {
+  font-size: 14px;
+  text-align: center;
+  color: $color-base-black;
+}
+
+.hero__img {
+  width: 280px;
+}
+
+.hero__old-price {
+  color: $color-base-primary;
+  font-size: 16px;
+}
+
+.hero__price {
+  color: $color-base-black;
+  font-size: 20px;
+}
+
+.hero__button {
+  color: $color-base-white;
+  background-color: $color-base-primary;
+  border-radius: 4px;
+  height: 40px;
+  width: 113px;
+  font-size: 16px;
+  padding: 8px 20px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  border: none;
+}

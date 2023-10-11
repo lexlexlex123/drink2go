@@ -1,5 +1,28 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $color-base-white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-letterD {
+  display: none;
+}
+
+.header__logo-letterG {
+  display: none;
+}
+
+.header__button {
+  border: none;
+  cursor: pointer;
+  padding: 22px;
+  background-color: $color-base-white;
+}
+
+.header__logo {
+  justify-self: flex-start;
+  display: flex;
+  margin-left: 20px;
 }

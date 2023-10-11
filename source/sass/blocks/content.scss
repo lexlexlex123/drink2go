@@ -1,3 +1,31 @@
 .content {
   flex-grow: 1;
 }
+
+.content__title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 4%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: $color-base-primary;
+  padding: 0;
+  margin: 0;
+}
+
+.content__title-big {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: $color-base-black;
+  padding: 0;
+  margin: 0;
+}
