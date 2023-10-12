@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet) {
     height: 80px;
+    margin-right: 20px;
   }
 }
 
@@ -24,6 +25,10 @@
   @media (min-width: $tablet) {
     display: flex;
   }
+
+  @media (min-width: $desktop) {
+    gap: 20px;
+  }
 }
 
 .header__menu-item {
@@ -33,7 +38,7 @@
   padding: 32px 20px;
   margin: 0;
   list-style-type: none;
-  letter-spacing: 2%;
+  letter-spacing: 1px;
   font-weight: 500;
   color: $color-base-black;
   align-items: center;
@@ -55,6 +60,7 @@
 .header__logo-letter {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .header__logo-letter::before {

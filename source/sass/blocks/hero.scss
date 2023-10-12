@@ -1,5 +1,6 @@
 .hero {
   display: grid;
+  padding-top: 20px;
   grid-template-columns: 20px 1fr 20px;
   background-color: $color-bg-flat-white;
 
@@ -26,30 +27,34 @@
   gap: 20px;
 
   @media (min-width: $tablet) {
-    padding: 40px 0 140px;
+    padding: 40px 0 250px;
   }
 }
 
 .hero__title {
   font-size: 36px;
-  letter-spacing: 2%;
   font-weight: 700;
   text-align: center;
   color: $color-base-black;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet) {
     font-size: 56px;
-    line-height: 80px;
+    letter-spacing: 4px;
+    line-height: 60px;
   }
 }
 
 .hero__def {
   font-size: 14px;
+  line-height: 20px;
   text-align: center;
   color: $color-base-black;
 
   @media (min-width: $tablet) {
     font-size: 20px;
+    line-height: 32px;
   }
 }
 
@@ -59,7 +64,7 @@
   @media (min-width: $tablet) {
     width: 476px;
     position: absolute;
-    bottom: -280px;
+    bottom: -180px;
   }
 }
 
