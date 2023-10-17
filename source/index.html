@@ -112,37 +112,57 @@
           <input class="range__text" name="right-price" type="text" value="900">
         </div>
         <span class="catalog__title">Наличие молока</span>
-        <label>
-          <input type="radio" name="milk" checked value="Неважно">Неважно
+        <label class="catalog__label">
+          <input type="radio" name="milk" checked value="Неважно">
+          <div class="catalog__radio"></div>
+          <span class="catalog__radio-title">Неважно</span>
         </label>
-        <label>
-          <input type="radio" name="milk" value="Только животное">Только животное
+        <label class="catalog__label">
+          <input type="radio" name="milk" value="Только животное">
+          <div class="catalog__radio"></div>
+          <span class="catalog__radio-title">Только животное</span>
         </label>
-        <label>
-          <input type="radio" name="milk" value="Только растительное">Только растительное
+        <label class="catalog__label">
+          <input type="radio" name="milk" value="Только растительное">
+          <div class="catalog__radio"></div>
+          <span class="catalog__radio-title">Только растительное</span>
         </label>
-        <label>
-          <input type="radio" name="milk" value="Без молока">Без молока
+        <label class="catalog__label">
+          <input type="radio" name="milk" value="Без молока" disabled>
+          <div class="catalog__radio"></div>
+          <span class="catalog__radio-title">Без молока</span>
         </label>
         <span class="catalog__title">Страна произростания</span>
-        <label>
-          <input type="checkbox" name="country1" checked value="Бразилия">Бразилия
+        <label class="catalog__label">
+          <input type="checkbox" name="country1" checked value="Бразилия">
+          <div class="catalog__checkbox"></div>
+          <span class="catalog__checkbox-title">Бразилия</span>
         </label>
-        <label>
-          <input type="checkbox" name="country2" value="Эфиопия">Эфиопия
+        <label class="catalog__label">
+          <input type="checkbox" name="country2" value="Эфиопия">
+          <div class="catalog__checkbox"></div>
+          <span class="catalog__checkbox-title">Эфиопия</span>
         </label>
-        <label>
-          <input type="checkbox" name="country3" value="Колумбия">Колумбия
+        <label class="catalog__label">
+          <input type="checkbox" name="country3" value="Колумбия">
+          <div class="catalog__checkbox"></div>
+          <span class="catalog__checkbox-title">Колумбия</span>
         </label>
-        <label>
-          <input type="checkbox" name="country4" value="Коста-Рика">Коста-Рика
+        <label class="catalog__label">
+          <input type="checkbox" name="country4" value="Коста-Рика">
+          <div class="catalog__checkbox"></div>
+          <span class="catalog__checkbox-title">Коста-Рика</span>
         </label>
-        <label>
-          <input type="checkbox" name="country5" value="Перу">Перу
+        <label class="catalog__label">
+          <input type="checkbox" name="country5" value="Перу" disabled>
+          <div class="catalog__checkbox"></div>
+          <span class="catalog__checkbox-title">Перу</span>
         </label>
-        <input type="submit" value="ПРИМЕНИТЬ">
-        <input type="reset" value="СБРОСИТЬ">
-        <label>
+        <div class="catalog__wrapper-buttons">
+          <input class="catalog__button" type="submit" value="ПРИМЕНИТЬ">
+          <input class="catalog__button catalog__button-white" type="reset" value="СБРОСИТЬ">
+        </div>
+        <label class="catalog__label-sort">
           Сортировка
           <select>
             <option>по умолчанию</option>

@@ -138,3 +138,140 @@
   color: $color-base-black;
   font-weight: 700;
 }
+
+.catalog__checkbox {
+  display: flex;
+  position: relative;
+  height: 24px;
+  width: 42px;
+  border-radius: 12px;
+  background-color: $color-base-grey;
+  align-items: center;
+  cursor: pointer;
+}
+
+.catalog__checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $color-base-white;
+  transition: 0.3s all;
+}
+
+.catalog__radio {
+  display: flex;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 2px solid $color-base-grey;
+  background-color: $color-base-white;
+  align-items: center;
+  cursor: pointer;
+}
+
+.catalog__radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-base-white;
+  transition: 0.3s all;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .catalog__radio {
+  border: 2px solid $color-base-primary;
+}
+
+input[type="radio"]:checked ~ .catalog__radio::after {
+  background-color: $color-base-primary;
+  transition: 0.3s all;
+}
+
+input[type="radio"]:disabled ~ .catalog__radio {
+  background-color: transparent;
+  border: 2px solid $color-light-grey;
+}
+
+input[type="radio"]:disabled ~ .catalog__radio ~ .catalog__radio-title {
+  color: $color-base-grey;
+}
+
+input[type="checkbox"]:checked ~ .catalog__checkbox {
+  background-color: $color-base-primary;
+}
+
+input[type="checkbox"]:checked ~ .catalog__checkbox::after {
+  left: 20px;
+  transition: 0.3s all;
+}
+
+input[type="checkbox"]:disabled ~ .catalog__checkbox {
+  background-color: $color-light-grey;
+}
+
+input[type="checkbox"]:disabled ~ .catalog__checkbox ~ .catalog__checkbox-title {
+  color: $color-base-grey;
+}
+
+input[type="checkbox"]:disabled ~ .catalog__checkbox::after {
+  background-color: $color-bg-lightest-grey;
+}
+
+.catalog__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.catalog__checkbox-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-black;
+}
+
+.catalog__radio-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-black;
+}
+
+.catalog__button {
+  width: 137px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  background-color: $color-base-primary;
+  border: none;
+  color: $color-base-white;
+  font-size: 16px;
+}
+
+.catalog__wrapper-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.catalog__button-white {
+  background-color: $color-base-white;
+  color: $color-base-primary;
+}
+
+.catalog__label-sort {
+  align-self: flex-end;
+}
